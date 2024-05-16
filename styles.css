@@ -1,0 +1,63 @@
+/* Estilos adicionales */
+
+td {
+    padding: 15px !important;
+    border: 2px solid white;
+}
+
+.glorify {
+    background-color: #ffcccc !important;
+}
+
+.curso-react {
+    background-color: #ffcc99 !important;
+}
+
+.curso-django {
+    background-color: #004dc8 !important;
+    color: #fff;
+}
+
+.horario-laboral {
+    background-color: #ccffcc !important;
+}
+
+.lavar {
+    background-color: #d52dff !important;
+    color: #fff;
+}
+
+.factor {
+    background-color: #5850ef !important;
+    color: #fff;
+}
+
+.ejercicio {
+    background-color: #ff9999 !important;
+}
+
+.proyecto {
+    background-color: #ffff99 !important;
+}
+
+.ducha {
+    background-color: #99ccff !important;
+}
+
+.tiempo-libre {
+    background-color: #d92531 !important;
+    color: #fff;
+}
+
+.post-instagram {
+    background-color: #cc99ff !important;
+}
+
+.devocional {
+    background-color: #ffe772 !important;
+}
+
+.marked {
+    background-color: gray !important;
+}
+

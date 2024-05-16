@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+
+    <!-- Sección de tabla con Bootstrap -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Lunes</th>
+                            <th scope="col">Martes</th>
+                            <th scope="col">Miércoles</th>
+                            <th scope="col">Jueves</th>
+                            <th scope="col">Viernes</th>
+                            <th scope="col">Sábado</th>
+                            <th scope="col">Domingo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="glorify markable">Glorify</td>
+                            <td class="glorify markable">Glorify</td>
+                            <td class="glorify markable">Glorify</td>
+                            <td class="glorify markable">Glorify</td>
+                            <td class="glorify markable">Glorify</td>
+                            <td class="glorify markable">Glorify</td>
+                            <td class="glorify markable">Glorify</td>
+                        </tr>
+                        <tr>
+                            <td class="curso-react markable">Curso React</td>
+                            <td class="curso-react markable">Curso React</td>
+                            <td class="curso-react markable">Curso React</td>
+                            <td class="curso-react markable">Curso React</td>
+                            <td class="curso-react markable">Curso React</td>
+                            <td class="curso-react markable">Curso React</td>
+                            <td class="curso-react markable">Curso React</td>
+                        </tr>
+                        <tr>
+                            <td class="horario-laboral markable">Horario Laboral</td>
+                            <td class="horario-laboral markable">Horario Laboral</td>
+                            <td class="horario-laboral markable">Horario Laboral</td>
+                            <td class="horario-laboral markable">Horario Laboral</td>
+                            <td class="horario-laboral markable">Horario Laboral</td>
+                            <td class="curso-django markable">Curso Django</td>
+                            <td class="curso-django markable">Curso Django</td>
+                        </tr>
+                        <tr>
+                            <td class="ejercicio markable">Ejercicio</td>
+                            <td class="curso-react markable">Curso React</td>
+                            <td class="ejercicio markable">Ejercicio</td>
+                            <td class="curso-react markable">Curso React</td>
+                            <td class="ejercicio markable">Ejercicio</td>
+                            <td class="lavar markable">Lavar</td>
+                            <td class="ejercicio markable">Ejercicio</td>
+                        </tr>
+                        <tr>
+                            <td class="curso-react markable">Curso React</td>
+                            <td class="proyecto markable">Proyecto</td>
+                            <td class="curso-react markable">Curso React</td>
+                            <td class="proyecto markable">Proyecto</td>
+                            <td class="curso-react markable">Curso React</td>
+                            <td class="proyecto markable">Proyecto</td>
+                            <td class="ducha markable">Ducha</td>
+                        </tr>
+                        <tr>
+                            <td class="ejercicio markable">Ejercicio</td>
+                            <td class="curso-react markable">Curso React</td>
+                            <td class="ejercicio markable">Ejercicio</td>
+                            <td class="curso-react markable">Curso React</td>
+                            <td class="ejercicio markable">Ejercicio</td>
+                            <td class="curso-react markable">Curso React</td>
+                            <td class="tiempo-libre markable">Tiempo Libre</td>
+                        </tr>
+                        <tr>
+                            <td class="ducha markable">Ducha</td>
+                            <td class="factor markable">Factor VIII</td>
+                            <td class="ducha markable">Ducha</td>
+                            <td class="factor markable">Factor VIII</td>
+                            <td class="ducha markable">Ducha</td>
+                            <td class="factor markable">Factor VIII</td>
+                            <td class="tiempo-libre markable">Tiempo Libre</td>
+                        </tr>
+                        <tr>
+                            <td class="post-instagram markable">Post Instagram</td>
+                            <td class="post-instagram markable">Post Instagram</td>
+                            <td class="post-instagram markable">Post Instagram</td>
+                            <td class="post-instagram markable">Post Instagram</td>
+                            <td class="post-instagram markable">Post Instagram</td>
+                            <td class="post-instagram markable">Post Instagram</td>
+                            <td class="post-instagram markable">Post Instagram</td>
+                        </tr>
+                        <tr>
+                            <td class="devocional markable">Devocional</td>
+                            <td class="devocional markable">Devocional</td>
+                            <td class="devocional markable">Devocional</td>
+                            <td class="devocional markable">Devocional</td>
+                            <td class="devocional markable">Devocional</td>
+                            <td class="devocional markable">Devocional</td>
+                            <td class="devocional markable">Devocional</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <button id="resetButton" class="btn btn-danger">Restablecer colores</button>
+    </div>
+
+    <!-- jQuery (Necesario para ciertas funcionalidades de Bootstrap) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Al hacer clic en una celda td con clase 'markable'
+            $('.markable').click(function () {
+                var cellIndex = $(this).index();
+    
+                // Si la celda ya está marcada, no hagas nada
+                if ($(this).hasClass('marked')) {
+                    return;
+                }
+    
+                // Agrega la clase 'marked' a la celda clicada
+                $(this).addClass('marked');
+    
+                // Almacena el índice de la celda clicada en el almacenamiento local
+                storeMarkedCells();
+            });
+    
+            // Al cargar la página
+            loadMarkedCells();
+    
+            // Al hacer clic en el botón de restablecer colores
+            $('#resetButton').click(function() {
+                // Elimina la clase 'marked' de todas las celdas
+                $('.markable').removeClass('marked');
+                // Limpia la lista de celdas marcadas del almacenamiento local
+                localStorage.removeItem('markedCells');
+            });
+    
+            // Función para cargar celdas previamente marcadas
+            function loadMarkedCells() {
+                var markedCells = JSON.parse(localStorage.getItem('markedCells')) || [];
+                // Marca las celdas previamente marcadas
+                $.each(markedCells, function(index, value) {
+                    $('.markable').eq(value).addClass('marked');
+                });
+            }
+    
+            // Función para almacenar celdas marcadas
+            function storeMarkedCells() {
+                var markedCells = [];
+                $('.markable.marked').each(function() {
+                    markedCells.push($(this).index());
+                });
+                localStorage.setItem('markedCells', JSON.stringify(markedCells));
+            }
+        });
+    </script>
+
+</body>
+
+</html>
+
